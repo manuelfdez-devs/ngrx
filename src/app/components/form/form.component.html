@@ -1,0 +1,29 @@
+<form [formGroup]="countryForm">
+  <div class="row">
+    <div class="col-5">
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="Country name"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="area"
+          placeholder="Area"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-block btn-primary" (click)="saveCountry()">
+        Save
+      </button>
+    </div>
+  </div>
+</form>
