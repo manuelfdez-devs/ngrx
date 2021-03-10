@@ -15,7 +15,6 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.select('country').subscribe((res) => {
-      console.log('country from store', res);
       this.countries = [...res.country];
     });
   }
